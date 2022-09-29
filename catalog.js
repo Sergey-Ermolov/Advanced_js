@@ -5,8 +5,10 @@ const goods = [
   { title: 'Shoes', price: 250 },
 ];
 
-const renderGoodsItem = (title, price) => {                                                   //тут присваиваю значение по умолчанию               //тут присваиваю значение по умолчанию
-  return `<div class="goods-item product_card_item"><h3 class="heading_product_card">${title = 'Продукт'}</h3><p class="price_product_card">${price = 320} ₽</p></div>`;
+const renderGoodsItem = (title, price) => {      
+  title = 'Продукт';
+  price = 20;  // Переделал присваивание по умолчанию
+  return `<div class="goods-item product_card_item"><h3 class="heading_product_card">${title}</h3><p class="price_product_card">${price} ₽</p></div>`;
 };
 
 // const renderGoodsList = (list) => {
